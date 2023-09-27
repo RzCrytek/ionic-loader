@@ -1,0 +1,14 @@
+<ion-content class="ion-padding">
+  <div class="content ion-text-center">
+    <h1>Página de Inicio</h1>
+    <ion-button color="success" fill="outline" (click)="simulateRequest()"
+      >Simular una petición</ion-button
+    >
+  </div>
+</ion-content>
+
+<app-loader
+  config="messagesConfig1"
+  [messageChangeTime]="1"
+  *ngIf="showLoader"
+></app-loader>
